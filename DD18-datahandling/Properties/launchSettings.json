@@ -2,7 +2,7 @@
   "profiles": {
     "DD18-datahandling": {
       "commandName": "Project",
-      "commandLineArgs": "parole.csv data.csv mucchio_di_commenti.csv parole_da_confrontare.csv"
+      "commandLineArgs": " -e count -column 4 -in DataMergeDescriptionCleaned.csv -out Rawgraphs.csv -words DescriptionKeywordsAnalysisQuantitySummary.csv"
     }
   }
 }
