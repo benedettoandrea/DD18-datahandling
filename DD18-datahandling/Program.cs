@@ -194,7 +194,7 @@ public class Program
                     field = fields[i];
                     if ((i + 1) == commentColumn)
                     {
-                        words = GetCommentSplitted(fields[i]);
+                        words = GetCommentSplitted(fields[i]).Where(w => !wordsToSkip.Contains(w)).ToList();
                         field = String.Join(" ", words);
                     }
                     csv.Append($"{field},");
