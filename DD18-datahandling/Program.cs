@@ -295,12 +295,12 @@ public class Program
     {
         return word
             .Replace("\u00A0", null)
-            .Replace(":", null)
+            /*.Replace(":", null)
             .Replace(".", null)
             .Replace("-", null)
-            .Replace(";", null)
+            .Replace(";", null)*/
             .Replace(",", null)
-            .Replace("'", null)
+            /*.Replace("'", null)
             .Replace(@"""", null)
             .Replace("(", null)
             .Replace(")", null)
@@ -334,9 +334,39 @@ public class Program
             .Replace("...", null)
             .Replace("š", "s")
             .Replace("š", "s")
-            .Replace("₂", "2")
-            .Replace("…", null)
-            .Replace("®", null);
+            .Replace("₂", "2")*/
+            
+            .Replace("100km","100 km")
+            .Replace("481km","481 km")
+            .Replace("500km","500 km")
+            .Replace("800km","800 km")
+            .Replace("co-emissionen", "co2 emissionen")
+            .Replace("co2emission", "co2 emission")
+            .Replace("co2emissions", "co2 emission")
+            .Replace("co2-emissions", "co2 emission")
+            .Replace("co2-emissionen", "co2 emissionen")
+
+            .Replace("car'","car")
+            .Replace("cars","car")
+            .Replace("cars'","car")
+            .Replace("channels","channel")
+            .Replace("consumptions", "consumption")
+            .Replace("drivers","driver")
+            .Replace("driver's","driver")
+            .Replace("emissions", "emission")
+            .Replace("emobility", "e-mobility")
+            .Replace("engines", "engine")
+            .Replace("episodes", "episode")
+            .Replace("materials", "material")
+            .Replace("models", "model")
+            .Replace("regulations", "regulation")
+            .Replace("sports","sport")
+            .Replace("technologies","technology")
+            .Replace("vehicles", "vehicle")
+            .Replace("videos", "video")
+            .Replace("wheels", "wheel");
+            /*.Replace("…", null)
+            Replace("®", null);*/
     }
 
     public static List<string> GetCommentSplitted(string comment)
